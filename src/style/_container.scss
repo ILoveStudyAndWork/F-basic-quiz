@@ -1,0 +1,38 @@
+.container {
+  background-color: $white;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  color: $primary-color;
+  margin: 10px 0;
+}
+
+.edu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.edu-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.year {
+  width: 200px;
+}
+
+.edu-detail {
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: $gray-light;
+  min-width: 1000px;
+}
+
+.edu-title {
+  font-weight: 600;
+}
