@@ -7,8 +7,8 @@
   flex-direction: column;
   margin: 0;
   padding: 0 20px 20px 20px;
-
 }
+// TODO 使用类选择器
 img {
   border-radius: 50px;
   height: 100px;
@@ -16,6 +16,7 @@ img {
   margin-top: -50px;
 }
 
-.intro-message, .hello {
+.intro-message,
+.hello {
   margin: 5px;
 }

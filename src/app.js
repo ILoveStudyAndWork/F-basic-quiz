@@ -4,9 +4,11 @@ const userDescription = document.getElementsByClassName("about-me-message")[0];
 const introMessage = document.getElementsByClassName("intro-message")[0];
 const avatarURl = document.getElementById("avatar");
 const educationList = document.getElementById("edu-list");
-const basicUrl = "http://localhost:8080/users/1";
-const educationUrl = "http://localhost:8080/users/1/educations";
+// TODO 从url中获取用户id
+const basicUrl = "http://localhost:3000/users/1";
+const educationUrl = "http://localhost:3000/users/1/educations";
 
+// TODO 内容可以按照模块和功能进一步拆分
 async function getBasicInfo() {
   const basicResponse = await fetch(basicUrl);
   const BasicData = await basicResponse.json();
@@ -16,6 +18,7 @@ async function getBasicInfo() {
   avatarURl.src = avatar;
 }
 
+// TODO 长方法可以抽象内部可复用结构或进行拆分
 function createEducationItem(year, title, description) {
   const educationItem = document.createElement("section");
   educationItem.setAttribute("class", "edu-item");
